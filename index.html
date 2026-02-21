@@ -188,6 +188,129 @@
         </div>
     </section>
 
+
+    <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Styles de base nécessaires */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: #f8f9fa;
+        }
+
+        /* Section Galerie "Ils m'ont fait confiance" */
+        .gallery-section {
+            background: #2c3e50;
+            padding: 5rem 5%;
+            width: 100%;
+        }
+
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+        }
+
+        .section-title { 
+            text-align: center; 
+            font-size: 2.5rem; 
+            margin-bottom: 3rem; 
+            color: white; 
+            font-weight: 300; 
+        }
+
+        .intro {
+            color: rgba(255,255,255,0.95);
+            text-align: center;
+            margin: 0 auto 1.5rem auto;
+            max-width: 900px;
+            font-size: 1.05rem;
+            line-height: 1.4;
+        }
+
+        /* Grille et Items */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .gallery-item {
+            background: #ddd;
+            border-radius: 15px;
+            aspect-ratio: 3/4;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .gallery-item:hover { 
+            transform: translateY(-8px) scale(1.02); 
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+
+        .gallery-item img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+        }
+
+        .gallery-caption { 
+            text-align: center; 
+            padding: 0.6rem 0; 
+            color: white; 
+            font-size: 0.95rem; 
+            background: #2c3e50; /* Pour assurer la lisibilité si débordement */
+            width: 100%;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+            .section-title { font-size: 2rem; }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="gallery-section" id="galerie">
+        <div class="container">
+            <h2 class="section-title">Ils m'ont fait confiance</h2>
+            <p class="intro">Voici quelques partenaires, et projets avec lesquels j'ai eu le plaisir de collaborer. Merci pour leur confiance.</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://new.express.adobe.com/webpage/TsLCb6f4qSFm9/resources/e45fd4a4-fea1-40b0-a45d-0b1214d9f3fb-img_3819_jpe?asset_id=e2272aa5-a94f-4918-8cc9-6dacd4b3c8b3&img_etag=%22b8219aaf8a364117a2debb7e04ea703c%22&image_assets=false&size=3370" alt="Image 1">
+                    <p class="gallery-caption">Client local fidèle</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://new.express.adobe.com/webpage/TsLCb6f4qSFm9/resources/a2a19abf-dd61-440f-962d-76842d75dfa0-img_3818_jpe?asset_id=3c54c10f-2797-428f-957a-bc485fb86d2d&img_etag=%2289e0115f708345b689951606d9b13cdc%22&image_assets=false&size=3842" alt="Image 2">
+                    <p class="gallery-caption">Collaboration créative réussie</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://new.express.adobe.com/webpage/TsLCb6f4qSFm9/resources/933f6cfd-a871-474e-b14e-c208e0b54444-dsc_1199_jpe?asset_id=5cbe81ee-a407-4568-8035-535996f58b6e&img_etag=%22435d60eb4b3247e38e09b82a5bec5549%22&image_assets=false&size=3842" alt="Image 3">
+                    <p class="gallery-caption">Projet de marque</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+
     <footer>
         <p>&copy; 2026 Louis Chiron - Portfolio Photographie</p>
     </footer>
