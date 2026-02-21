@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louis Chiron - Portfolio Photographie</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            padding-top: 60px;
+        }
+        
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+        
+        .logo { font-size: 1.5rem; font-weight: 700; color: #2c3e50; }
+
+        section { padding: 5rem 5%; max-width: 1200px; margin: 0 auto; }
+        h2 { text-align: center; font-size: 2.5rem; margin-bottom: 3rem; color: #2c3e50; font-weight: 300; }
+        
+        .category { margin: 3rem 0; }
+        .category h3 {
+            font-size: 1.8rem;
+            color: #34495e;
+            margin-bottom: 1.5rem;
+            padding-left: 1rem;
+            border-left: 4px solid #3498db;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .gallery-item {
+            background: #ddd;
+            border-radius: 15px;
+            aspect-ratio: 3/4;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .gallery-item:hover { 
+            transform: translateY(-8px) scale(1.02); 
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+        
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; }
+
+        /* Section Confiance */
+        .gallery-section { background: #2c3e50; padding: 5rem 5%; color: white; margin-top: 4rem; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+        .gallery-caption { text-align: center; padding: 0.6rem 0; font-size: 0.95rem; }
+
+        footer { background: #2c3e50; color: white; text-align: center; padding: 2rem; margin-top: 2rem; }
+
+        @media (max-width: 768px) {
+            .gallery { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 480px) {
+            .gallery { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Louis Chiron | Photographie</div>
+    </header>
+
+    <section id="photo">
+        <h2>Mes Photographies</h2>
+        
+        <div class="category">
+            <h3>Sport</h3>
+            <div class="gallery">
+                <div class="gallery-item"><img src="https://new.express.adobe.com/webpage/JO0KPUQ1MnxN3/resources/12e70eb4-99ce-414d-9728-3448581ed3ed-dsc_2827_jpe?asset_id=b39da2ee-f55a-4877-a4fd-6133e8eac9fc&img_etag=%22225aa227431045d58fb405f6ab310025%22&image_assets=false&size=3842" alt="Sport 1"></div>
+                <div class="gallery-item"><img src="https://new.express.adobe.com/webpage/JO0KPUQ1MnxN3/resources/672f7b93-8aaf-4e77-98cf-a54f71b3096e-dsc_3735_jpe?asset_id=9782bd56-9962-4ad0-a4f6-b59954b18464&img_etag=%22d63d458c8eb740f8bf0b510197a5e1dd%22&image_assets=false&size=3842" alt="Sport 2"></div>
+                <div class="gallery-item"><img src="https://new.express.adobe.com/webpage/TsLCb6f4qSFm9/resources/94e562b3-3498-4cb4-bd5b-2823d0afa631-img_3825_jpe?asset_id=5b2ac91f-798d-49ce-8745-1b3a9c89ec43&img_etag=%22faa2d88dbfbe48ccb80fd6d55efa3817%22&image_assets=false&size=3842" alt="Sport 3"></div>
+                <div class="gallery-item"><img src="https://new.express.adobe.com/webpage/JO0KPUQ1MnxN3/resources/9af93eee-ddcc-4432-a696-cfacf3a4fb8b-dsc_1122_jpe?asset_id=16f3ac77-5d3c-4d8e-bee1-41294983e0d1&img_etag=%224ac52acc59084d519bcb41ab11353a29%22&image_assets=false&size=2560" alt="Sport 4"></div>
+                <div class="gallery-item"><img src="https://new.express.adobe.com/webpage/JO0KPUQ1MnxN3/resources/80a534c4-b383-47bc-94e3-3bd8fe796e65-dsc_3314_jpe?asset_id=5fbc2d55-7a1b-413b-ab0c-2ac95b816c4a&img_etag=%22c67a9f232e974534be4df2106d779917%22&image_assets=false&size=1024" alt="Sport 5"></div>
+                <div class="gallery-item"><img src="https://new.express.adobe.com/webpage/TsLCb6f4qSFm9/resources/a3dcdfc3-bcf8-4ed3-a63d-9b52ad2aa446-dsc_0966_jpe?asset_id=cb5a899f-2155-488e-89e8-82f3e3c325b4&img_etag=%2226eddea80dcd45ddb9312c65886ecdca%22&image_assets=false&size=2560" alt="Sport 6"></div>
+                <div class="gallery-item"><img src="https://new.express.adobe.com/webpage/JO0KPUQ1MnxN3/resources/f14383e5-d3eb-4afe-b808-299faf6ec92b-dsc_0277_jpe?asset_id=d3a54ffe-50d5-4e6c-8777-540742f61c93&img_etag=%22cf7ad9cd7b0c431cb6418abd8375dd2d%22&image_assets=false&size=2560" alt="Sport 7"></div>
+                <div class="gallery-item"><img src="https://new.express.adobe.com/webpage/JO0KPUQ1MnxN3/resources/70e6736f-b72f-450e-9bb4-a3b3e2657c6f-dsc_0338_jpe?asset_id=4801f81a-91f7-4b3c-879b-dd5cb6b824aa&img_etag=%223ca8596a5ee94e23b1d242a3c98aa039%22&image_assets=false&size=2560" alt="Sport 8"></div>
+                <div class="gallery-item"><img src="https://new.express.adobe.com/webpage/JO0KPUQ1MnxN3/resources/77717cad-1746-49ab-be4f-21567c7205fb-img_0966_jpe?asset_id=aa2a9a49-e90e-47f2-827f-5bbc7301b2b4&img_etag=%2271e3fd753bce4886949f9751e0608e4e%22&image_assets=false&size=2560" alt="Sport 9"></div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h3>Rue</h3>
+            <div class="gallery">
+                <div class="gallery-item"><img src="https://new.express.adobe.com/webpage/JO0KPUQ1MnxN3/resources/9aed1e22-221d-4a87-aea5-a866be6d27af-dsc_0867_jpe?asset_id=b2036b74-0872-452f-9da0-bb4218dc160c&img_etag=%220c3fb4ee64464c4b958f2a522d344cd9%22&image_assets=false&size=3842" alt="Rue 1"></div>
+                <div class="gallery-item"><img src="https://new.express.adobe.com/webpage/JO0KPUQ1MnxN3/resources/f1deb204-d4f4-4a10-a6b3-e4f8cee7312b-dsc_0934_jpe?asset_id=36d2efa7-2f6c-473f-b2bc-410145ba3a05&img_etag=%22db7e1a4dad5c498f9b2068c29bfaf32e%22&image_assets=false&size=3842" alt="Rue 2"></div>
+                <div class="gallery-item"><img src="https://new.express.adobe.com/webpage/JO0KPUQ1MnxN3/resources/479ad5c7-d7e6-472e-b0ed-d2df5c1a7b26-dsc_1174_jpe?asset_id=eecc5ddc-1bdf-43f6-8ed8-bb51f35656e0&img_etag=%222467079596584ba8b37421f69cb1d850%22&image_assets=false&size=3842" alt="Rue 3"></div>
+                <div class="gallery-item"><img src="https://new.express.adobe.com/webpage/JO0KPUQ1MnxN3/resources/1d2048ac-4c2a-4773-9de9-35c9437c0d91-dsc_1357_jpe?asset_id=bea43158-8c32-4f89-a42c-2165845a163b&img_etag=%22473cae8656d84251a959090ccbf3a7a2%22&image_assets=false&size=3842" alt="Rue 4"></div>
+                <div class="gallery-item"><img src="https://new.express.adobe.com/webpage/JO0KPUQ1MnxN3/resources/426ff9a7-5a80-46e1-9a1c-2ca50026a394-dsc_1898_jpe?asset_id=6c77d8f3-3e3c-427e-a0d6-8c3f5ab73c71&img_etag=%2262460c9c86d54c798ebf64efa6a3911f%22&image_assets=false&size=3842" alt="Rue 5"></div>
+                <div class="gallery-item"><img src="https://new.express.adobe.com/webpage/JO0KPUQ1MnxN3/resources/9cf2ef5c-13fb-4ab2-b68a-6a29b00868db-dsc_1806_jpe?asset_id=668cd81b-4d88-4f92-8344-3271feed2fff&img_etag=%22f4abe34d4bf9483c9b3a178af2e10fdf%22&image_assets=false&size=3842" alt="Rue 6"></div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h3>Militaires</h3>
+            <div class="gallery">
+                <div class="gallery-item"><img src="https://new.express.adobe.com/webpage/JO0KPUQ1MnxN3/resources/4b2fd696-ef68-4697-9ea7-5cde63e8ff66-dsc_8614_jpe?asset_id=0b367f20-8a09-417b-ac91-f6faad97e09d&img_etag=%227f0429c5fb214083986f0dae34e4b8c4%22&image_assets=false&size=1024" alt="Militaire 1"></div>
+                <div class="gallery-item"><img src="https://new.express.adobe.com/webpage/JO0KPUQ1MnxN3/resources/3a5fa031-5397-4feb-a91e-b6d164765000-dsc_8636_jpe?asset_id=6b226b78-9676-467c-b776-3bdca389f3b7&img_etag=%22ccb46923f3a54babaf95f0c5a75975f9%22&image_assets=false&size=1024" alt="Militaire 2"></div>
+                <div class="gallery-item"><img src="https://new.express.adobe.com/webpage/JO0KPUQ1MnxN3/resources/ee3091a2-2dbf-4244-b841-553151a38a76-dsc_8817_jpe?asset_id=c243896b-fdb5-4a17-9829-578595f65b9f&img_etag=%22a789793c59b542c59d06660bee4eb898%22&image_assets=false&size=1024" alt="Militaire 3"></div>
+                <div class="gallery-item"><img src="https://new.express.adobe.com/webpage/JO0KPUQ1MnxN3/resources/31731974-5324-4f1b-bdda-fd0dac4f879e-dsc_9270_jpe?asset_id=6c480bac-432d-4946-aa7f-048c74c64715&img_etag=%2272550e942581414bacbb841e5a1e2b60%22&image_assets=false&size=1024" alt="Militaire 4"></div>
+                <div class="gallery-item"><img src="https://new.express.adobe.com/webpage/TsLCb6f4qSFm9/resources/36222351-f00d-4943-8293-9637c15042fa-img_3823_jpe?asset_id=302d7fbf-e8a5-441a-8dc8-5eb5ffa9f441&img_etag=%22c8f528c15bad4bf0915a680aded78fa1%22&image_assets=false&size=3842" alt="Militaire 5"></div>
+                <div class="gallery-item"><img src="https://new.express.adobe.com/webpage/TsLCb6f4qSFm9/resources/f0c439c3-9732-46d0-a04a-7ca3363901c4-img_3824_jpe?asset_id=c058d8e9-825f-492a-a4fa-228bcd7acb07&img_etag=%22a6b58b3db80343488f2e962323ec0ee3%22&image_assets=false&size=3839" alt="Militaire 6"></div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h3>Montagne</h3>
+            <div class="gallery">
+                <div class="gallery-item"><img src="https://new.express.adobe.com/webpage/JO0KPUQ1MnxN3/resources/ecdfb620-6b28-47bf-b818-56fbd7596845-dsc_9705_jpe?asset_id=5bd7cd41-80f5-4c49-820d-7d456b93f1c7&img_etag=%225aab6349dbdb43ee84efec45348267fe%22&image_assets=false&size=1024" alt="Montagne 1"></div>
+                <div class="gallery-item"><img src="https://new.express.adobe.com/webpage/JO0KPUQ1MnxN3/resources/ed41e426-6fc8-4339-9481-01dd50e87ed9-dsc_9823_jpe?asset_id=76b91c9e-b929-4f15-b99c-61d46264b511&img_etag=%22cb84218f354549b7a7d9d633794ae2e7%22&image_assets=false&size=1024" alt="Montagne 2"></div>
+                <div class="gallery-item"><img src="https://new.express.adobe.com/webpage/JO0KPUQ1MnxN3/resources/eafab003-c841-4025-a6f2-febe01f77d90-dsc_9779_jpe?asset_id=ba5cbb95-6d45-482f-99db-91a51a3fd337&img_etag=%22be1cc92936c74de384d0b8d54a47f539%22&image_assets=false&size=1024" alt="Montagne 3"></div>
+            </div>
+        </div>
+        
+        <div class="category">
+            <h3>Animaux</h3>
+            <div class="gallery">
+                <div class="gallery-item"><img src="https://new.express.adobe.com/webpage/JO0KPUQ1MnxN3/resources/4d1d6de9-d491-445d-961d-3c392c6b6792-dsc_8293_jpe?asset_id=f10fd80b-c234-48eb-a607-033ebf84bc83&img_etag=%22397f14a28195474eb2d2ed47e8a56fc0%22&image_assets=false&size=3842" alt="Animaux 1"></div>
+                <div class="gallery-item"><img src="https://new.express.adobe.com/webpage/JO0KPUQ1MnxN3/resources/c9deb7ef-5baf-4c2f-a527-3949cfae78a6-dsc_8362_jpe?asset_id=dd3dc153-a945-42e5-baec-326d839f58f8&img_etag=%22a812306c91d144e38d2fa00f2e2e733c%22&image_assets=false&size=3842" alt="Animaux 2"></div>
+                <div class="gallery-item"><img src="https://new.express.adobe.com/webpage/JO0KPUQ1MnxN3/resources/adfbe12b-4a13-48d6-bb19-9e834db2ac0c-dsc_7899_jpe?asset_id=041a3689-7fc5-4f0d-a6c0-505ca91d060f&img_etag=%22c8c1e27e3513459f8f4e7876d2616067%22&image_assets=false&size=3332" alt="Animaux 3"></div>
+                <div class="gallery-item"><img src="https://new.express.adobe.com/webpage/JO0KPUQ1MnxN3/resources/43e25bdb-fcce-43af-b70b-33c7895e45f0-dsc_7937_jpe?asset_id=a549adad-bbc5-4486-aeea-850b6ec5cf37&img_etag=%2257ffec30445a4af5b21f5eaa8342f8fa%22&image_assets=false&size=3842" alt="Animaux 4"></div>
+                <div class="gallery-item"><img src="https://new.express.adobe.com/webpage/JO0KPUQ1MnxN3/resources/2abc5811-6379-41b9-94d1-6c8464341af7-dsc_7910_jpe?asset_id=d66ceb89-930d-4b98-a7e0-b9fee787e01c&img_etag=%226167d4689c194643baff2a35c1c7df81%22&image_assets=false&size=3842" alt="Animaux 5"></div>
+                <div class="gallery-item"><img src="https://new.express.adobe.com/webpage/JO0KPUQ1MnxN3/resources/2ddaa874-5b12-4847-81af-b185c52e5e68-dsc_7932_jpe?asset_id=ad5402d3-aac7-4eb6-ae68-9800e1b3d313&img_etag=%224eedf86977cc47ab9ee7e9de4376f2bf%22&image_assets=false&size=3842" alt="Animaux 6"></div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <footer>
+        <p>&copy; 2026 Louis Chiron - Portfolio Photographie</p>
+    </footer>
+
+</body>
+</html>
